@@ -1,0 +1,88 @@
+GET http://localhost:3001/api/users/
+###
+GET http://localhost:3003/api/blogs/
+###
+
+GET http://localhost:3001/api/persons/3
+
+###
+
+POST http://localhost:3003/api/users/ HTTP/1.1
+content-type: application/json
+
+{   
+    "name": "Manu",
+    "password": "1234"
+}
+
+###
+
+POST http://localhost:3003/api/blogs/ HTTP/1.1
+content-type: application/json 
+
+{   
+    "nameBlog": "El tapiz de Fionabar",
+    "author":"dsffsdsfd",
+    "url":"sfdhlsn",
+    "likes":"5"
+}
+###
+Delete http://localhost:3003/api/blogs/6606d249dfe3c33cfb6c4683 HTTP/1.1
+content-type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDJjMWViY2VhNGE3YzU1OTdmNGFiOCIsImlhdCI6MTcxMTQ1NzE4NCwiZXhwIjoxNzExNDYwNzg0fQ.s_BmxGtOUghaBOudsC3tIOmn3hV5jpMGfMH0gspccyI
+# console.log(request.user)
+###
+
+POST http://localhost:3003/api/blogs/ HTTP/1.1 
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDgwYzhmYjhiMmNiMDI1YTRjODlkNCIsImlhdCI6MTcxMTgwMzc1MSwiZXhwIjoxNzExODA3MzUxfQ.Cj1IdCYD2RXXThnaOCHftnASj4dwYNqqnG7rdgF9Fd4
+
+{   
+    "title": "kjo  jknlkm",
+    "author":"Frank",
+    "url":"sfdhlsn"
+}
+
+###
+
+POST http://localhost:3003/api/users/ HTTP/1.1
+content-type: application/json
+
+{   
+    "name": "Lolo",
+    "password": "1234"
+}
+
+
+
+
+###
+DELETE http://localhost:3001/api/persons/654b8bce9592e0ea5a270a20
+
+###
+PUT http://localhost:3001/api/persons/654e0d69b1bc5d963a30897e
+content-type: application/json
+
+{   
+    "name": "Eva",
+    "number": "55555"
+}
+
+###
+POST http://localhost:3003/api/login/ HTTP/1.1
+content-type: application/json
+
+{
+  "username": "Sally",
+  "password": "1234"
+}
+
+
+###
+
+GET http://localhost:3001/api/users/
+
+
+
+
+
